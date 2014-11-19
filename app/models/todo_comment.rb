@@ -1,5 +1,5 @@
 class TodoComment < ActiveRecord::Base
-	validates :content, presence: true
+	validates :content, :todo, presence: true
 
 	belongs_to(
 		:todo,
